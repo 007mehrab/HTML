@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Form</title>
+</head>
+<body>
+	<h2>Registion form </h2>
+	<form action="" method="post">
+		<!-- input types: text,number,radio,submit,email. textbox: texare -->
+		<fieldset>
+			<legend>Personal Information</legend>
+		<label for="fullname">Full name:</label> <br>
+		<input type="text" name="fullname" placeholder="Enter your fullname"><br>
+		<label for="gender">Gender:</label><br>
+		Male<input type="radio" name="gender" value="male">
+		female<input type="radio" name="gender" value="female">
+		<br>
+		<label for="email">Email:</label><br>
+		<input type="email" name="email" placeholder="Enter a vaid email">
+		<br>
+		<label for="district">Districts</label>
+		<select name="district">
+			<option value=""hidden>Select District</option>
+
+			<optgroup label="Dhaka">
+			<option value="Dhaka">Dhaka</option>
+			<option value="Dhaka">Narsingdi</option>
+			</optgroup>
+			
+			<optgroup label="Cumilla">
+			<option value="Cumilla">Cumilla</option>
+			<option value="Cumilla">Nangalkot</option>
+			</optgroup>
+			<option value="Khulna">Khulna</option>
+			<option value="Chittagong">Chittagong</option>
+			
+
+		</select> <br>
+		<label>Hobbies:</label><br>
+		cricket  <input type="checkbox" name="cricket" value="cr">
+		Football  <input type="checkbox"name="Football" value="ft">
+		Basketball<input type="checkbox"name="Basketball" value="Bb">
+		Swimming <input type="checkbox"name="Swimming " value="cr">
+		<br>
+		</fieldset>
+		<fieldset>
+			<legend>login info</legend>
+		<label for="pass1" >Password</label><br>
+		<input type ="Password" name="pass1" placeholder="Enter Password"><br>
+		<label for="pass2">Re-type password</label><br>
+		<input type="Password" name="pass2" placeholder="Re-type password">
+
+
+		<br>
+		</fieldset>
+		<input type="submit" name="submit" value="send">
+
+
+
+
+
+	</form>
+</body>
+</html>
